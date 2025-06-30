@@ -1,0 +1,75 @@
+DATA:
+  IMG_SIZE: 448
+  SINGLE_TASK_DICT:
+    semseg:
+      mIoU: 0.6721
+    normals:
+      rmse: 17.97
+    sal: 
+      mIoU: 0.6235
+    human_parts:
+      mIoU: 0.6193
+
+TRAIN:
+   FREEZE_DOWNSAMPLE_REDUCTION: True
+#  FREEZE_PATCH_EMBED: True
+#  FREEZE_LAYER_NORM: True
+#  FREEZE_RELATIVE_POSITION_BIAS: False
+
+MODEL:
+  TYPE: swin
+  NAME: TADFormer_r32_Swin-T
+  DROP_PATH_RATE: 0.2
+  SWIN:
+    EMBED_DIM: 96
+    DEPTHS: [2, 2, 6, 2]
+    NUM_HEADS: [3, 6, 12, 24]
+    WINDOW_SIZE: 7
+
+  # Base MTLoRA
+  TADMTL:
+    ENABLED: True
+    R: [ 32, 32, 32, 32 ]
+    SHARED_SCALE: [ 4.0 ]
+    TASK_SCALE: [ 4.0 ]
+    DROPOUT: [ 0.05, 0.05, 0.05, 0.05 ]
+    TRAINABLE_SCALE_SHARED: False
+    INTERMEDIATE_SPECIALIZATION: False
+    FREEZE_PRETRAINED: True
+    SPLIT_QKV: False
+    QKV_ENABLED: True
+    PROJ_ENABLED: True
+    FC1_ENABLED: True
+    FC2_ENABLED: True
+    DOWNSAMPLER_ENABLED: False
+    SHARED_R: 32
+
+    # Dynamic Task Filter
+    DTF:
+      ENABLED: True
+
+    # Task-Prompt Conditional Operator
+    TPC:
+      ENABLED: True
+      PROMPT_CFG:
+        PERTASK_LEN: 1
+
+    ABLATION:
+      SKIPCONNECTION: True # Default : True
+      STAGEWISEGATING: True # Default : True
+
+  DECODER_HEAD:
+    semseg: hrnet
+    normals: hrnet
+    sal: hrnet
+    human_parts: hrnet
+    edge: hrnet
+    depth: hrnet
+
+
+
+
+
+
+
+

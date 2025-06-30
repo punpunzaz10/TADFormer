@@ -51,5 +51,5 @@ main.py --cfg configs/TADFormer/[config_name].yaml \
 
 ## Acknowlegment
 
-This repo benefits fromt the [MTLoRA](https://github.com/scale-lab/MTLoRA) and [ddfnet](https://github.com/theFoxofSky/ddfnet).
+This repo benefits from the [MTLoRA](https://github.com/scale-lab/MTLoRA) and [ddfnet](https://github.com/theFoxofSky/ddfnet).
 

